@@ -116,6 +116,22 @@ body {
     object-fit: contain;
 }
 
+.project.screenshot {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.project-links a{
+    margin: 1%;
+}
+
 .technologies {
     flex-direction: column;
 }
