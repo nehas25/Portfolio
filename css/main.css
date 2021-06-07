@@ -1,0 +1,173 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    /* font-family: 'Libre Baskerville', serif; */
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 1.2em;
+    margin: 1em;
+}
+
+.nav-item a {
+    text-decoration: none;
+    padding: 1em;
+    /* color: white; */
+    color: black;
+    font-size: 1.2em;
+}
+
+#my-logo-img {
+    width: 40%;
+    height: 40%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+
+    /* background: linear-gradient(
+        to top,
+        rgba(136, 139, 214, 1),
+        rgba(136, 139, 214, 0.5) 
+  ) */
+}
+
+.nav.center, .nav.right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+.nav.left {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+#about-section {
+    display: flex;
+    align-items: center;
+    margin: 10% 20%;
+}
+
+#about-me-p{
+    margin-right: 10%;
+}
+
+#my-pic {
+    border-radius: 50%;
+    width: 20vw;
+    height: 20vh;
+}
+
+/* #about-section-container {
+    background-color: #99D3DF;
+} */
+
+.projects-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #CDCDCD; */
+}
+
+#projects-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.project {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5%;
+    padding: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.project:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.project.screenshot img {
+    padding: 0;
+    margin: 0;
+    width: 500px;
+    height: 480px;
+    object-fit: contain;
+}
+
+.technologies {
+    flex-direction: column;
+}
+
+.contact-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fs-frm {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;;
+}
+
+#fs-frm-inputs {
+    margin-bottom: 2%;
+    border: none;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item label {
+    margin: 2%;
+    margin-left: 0;
+}
+
+.form-control {
+    font-size: 1.5em;
+}
+
+#submit-btn {
+    width: 25%;
+}
+
+#submit-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+#submit-btn {
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+#submit-btn:hover {
+    cursor: pointer;
+}
