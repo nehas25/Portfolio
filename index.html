@@ -4,6 +4,10 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <!-- Bootstrap CSS -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
     <!-- <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css"/> -->
@@ -33,10 +37,10 @@
                         <a href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">Projects</a>
+                        <a href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">Contact Me</a>
+                        <a href="#contact-me">Contact Me</a>
                     </li>
                     <li class="nav-item">
                         <a href="./resources/Neha_Sharma_Resume.pdf" target="_blank" href="#">Resume</a>
@@ -62,91 +66,88 @@
     
     <div id="about-section-container">
         <section id="about-section">
-            <p id="about-me-p">Hi! I am Neha Sharma. I am a budding Full Stack Developer. I have a ton of experience in the software industry as a Software QA automation engineer and now switching to full stack development. </p>
+            <p id="about-me-p">Hi! I am <span>Neha Sharma</span>. I am a budding Full Stack Developer. I have a ton of experience in the software industry as a Software QA automation engineer and now switching to full stack development. </p>
             <img id="my-pic" src="./resources/face.png" alt=""/>
         </section>
     </div>
 
-    <div class="projects-section-container">
+    <div class="projects-section-container" id="projects">
         <h1>Projects</h1>
 
         <section id="projects-container">
             <div class="project-container">
                 <div class="project screenshot">
-                    <div class="project-links">
-                        <a href="https://github.com/nehas25/apparel-storefront" target="_blank">
-                            <i class="fab fa-github-square"></i>
-                        </a>
-                        <a href="https://snazzle.herokuapp.com/" target="_blank">
-                            <i class="fas fa-external-link-square-alt"></i>
-                        </a>
-                    </div>
-                
                     <a href="https://snazzle.herokuapp.com/" target="_blank" >
                         <img src="./resources/projects/Snazzle.png" alt=""/>
                     </a>
                 </div>
                 <div class="project description">
-                    <p>Admin site of your snazzy fashion store that allows you to add, update, delete items and filter them by various categories.</p>
-                </div>
-                <div class="project technologies">
-                    <p>Express</p>
-                    <p>Node</p>
-                    <p>Mongoose</p>
+                    <div class="project-links">
+                        <a href="https://github.com/nehas25/apparel-storefront" target="_blank">
+                            <i class="fab fa-github-square fa-lg"></i>
+                        </a>
+                        <a href="https://snazzle.herokuapp.com/" target="_blank">
+                            <i class="fas fa-external-link-square-alt fa-lg"></i>
+                        </a>
+                    </div>
+                    <p class="about-project">Admin site of your snazzy fashion store that allows you to add, update, delete items and filter them by various categories.</p>
+                    <div class="project technologies">
+                        <p>Express</p>
+                        <p>Node</p>
+                        <p>Mongoose</p>
+                    </div>
                 </div>
             </div>
             
             <div class="project-container">
-                <div class="project technologies">
-                    <p>Django</p>
-                    <p>Postgres</p>
-                    <p>Materialize</p>
-                </div>
                 <div class="project screenshot">
-                    <div class="project-links">
-                        <a href="https://github.com/nehas25/cryptocollector" target="_blank">
-                            <i class="fab fa-github-square"></i>
-                        </a>
-                        <a href="https://cryptocollector-ns.herokuapp.com/" target="_blank">
-                            <i class="fas fa-external-link-square-alt"></i>
-                        </a>
-                    </div>
-
                     <img src="./resources/projects/Cryptocollector.png" alt=""/>
                 </div>
                 <div class="project description">
-                    <p>A full CRUD application that allows the users to collect information about their favorite crypto coins.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/nehas25/cryptocollector" target="_blank">
+                            <i class="fab fa-github-square fa-lg"></i>
+                        </a>
+                        <a href="https://cryptocollector-ns.herokuapp.com/" target="_blank">
+                            <i class="fas fa-external-link-square-alt fa-lg"></i>
+                        </a>
+                    </div>
+                    <p class="about-project">A full CRUD application that allows the users to collect information about their favorite crypto coins.</p>
+                    <div class="project technologies">
+                        <p>Django</p>
+                        <p>Postgres</p>
+                        <p>Materialize</p>
+                    </div>
                 </div>
             </div>
 
             <div class="project-container">
-                <div class="project description">
-                    <p>You just found yourself virtual pet! Take good care of it. Make sure you feed it, play with it, and give it enough sleep.</p>
-                </div>
-                <div class="project technologies">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>Javascript</p>
-                    <p>jQuery</p>
-                </div>
                 <div class="project screenshot">
+                    <img src="./resources/projects/Ghostgotchi.png" alt=""/>
+                </div>
+                <div class="project description">
                     <div class="project-links">
                         <a href="https://github.com/nehas25/tamagotchi" target="_blank">
-                            <i class="fab fa-github-square"></i>
+                            <i class="fab fa-github-square fa-lg"></i>
                         </a>
                         <a href="https://nehas25.github.io/tamagotchi/" target="_blank">
-                            <i class="fas fa-external-link-square-alt"></i>
+                            <i class="fas fa-external-link-square-alt fa-lg"></i>
                         </a>
                     </div>
-
-                    <img src="./resources/projects/Ghostgotchi.png" alt=""/>
+                    <p class="about-project">You just found yourself virtual pet! Take good care of it. Make sure you feed it, play with it, and give it enough sleep.</p>
+                    <div class="project technologies">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Javascript</p>
+                        <p>jQuery</p>
+                    </div>
                 </div>
             </div>
 
         </section>
     </div>
 
-    <div class="contact-section-container">
+    <div class="contact-section-container" id="contact-me">
         <h2>Contact Me</h2>
 
         <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mrgrqvag" method="post">
