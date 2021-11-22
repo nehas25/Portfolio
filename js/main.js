@@ -1,15 +1,19 @@
 function toggleHamburgerMenu() {
-  let navItems = document.getElementsByClassName("nav center");
-  if (navItems.className.indexOf("responsive") > -1) {
-    navItems.className.replace(" responsive", "");
-  } else {
-    navItems.className += " responsive";
-  }
-
-  let navItems = document.getElementsByClassName("nav right");
-  if (navItems.className.indexOf("responsive") > -1) {
-    navItems.className.replace(" responsive", "");
-  } else {
-    navItems.className += " responsive";
+  let navItems = [];
+  console.log(document.getElementsByClassName('nav center'));
+  navItems.push(document.getElementsByClassName('nav center'));
+  navItems.push(document.getElementsByClassName('nav right'));
+  for(navElem of navItems) {
+    console.log(navElem[0].className);
+    let currentClassName = navElem[0].className;
+    let newClassName;
+    if (currentClassName.indexOf("responsive") > -1) {
+      newClassName = currentClassName.replace(" responsive", "");
+    } else {
+      newClassName = currentClassName + " responsive"
+    }
+    navElem[0].className = newClassName;
   }
 }
+
+document.getElementById('hamburger-icon').addEventListener('click', toggleHamburgerMenu);
