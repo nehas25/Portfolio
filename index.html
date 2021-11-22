@@ -4,6 +4,8 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Hamburger icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -26,13 +28,16 @@
 <body>
     <nav>
         <div class = "nav-container">
-            <div class="nav left">
-                <a class="navbar-logo" href="#">
-                    <img id="my-logo-img" src="./resources/MyLogo.png" alt="Neha Sharma's Logo"/>
-                </a>
+          <div class="nav left">
+              <a href="javascript:void(0);" id="hamburger-icon" onclick="toggleHamburgerMenu()">
+                <i class="fa fa-bars"></i>
+              </a>
+              <a class="navbar-logo" href="#">
+                  <img id="my-logo-img" src="./resources/MyLogo.png" alt="Neha Sharma's Logo"/>
+              </a>
             </div>
             <div>
-                <ul class="nav center">
+                <ul class="nav center responsive">
                     <li class="nav-item">
                         <a href="#">About</a>
                     </li>
@@ -48,7 +53,7 @@
                 </ul>
             </div>
             <div>
-                <ul class="nav right">
+                <ul class="nav right responsive">
                     <li class="nav-item">
                         <a href="https://github.com/nehas25" target="_blank" href="#">
                             <i class="fab fa-github-square fa-lg"></i>
@@ -66,8 +71,8 @@
     
     <div id="about-section-container">
         <section id="about-section">
-            <p id="about-me-p">Hi! I am <span>Neha Sharma</span>. I am a budding Full Stack Developer. I have a ton of experience in the software industry as a Software QA automation engineer and now switching to full stack development. </p>
-            <img id="my-pic" src="./resources/face.png" alt=""/>
+          <p id="about-me-p">Hi! I am <span>Neha Sharma</span>. I am a budding Full Stack Developer. I have a ton of experience in the software industry as a Software QA automation engineer and now switching to full stack development. </p>
+          <img id="my-pic" src="./resources/face.png" alt=""/>
         </section>
     </div>
 

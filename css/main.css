@@ -13,6 +13,11 @@ body {
     margin: 1em;
 }
 
+.hamburger-icon {
+  color: black;
+  display: none;
+}
+
 .nav-item a {
     text-decoration: none;
     padding: 1em;
@@ -22,6 +27,7 @@ body {
 
 #my-logo-img {
     width: 40%;
+    min-width: 50px;
     height: 40%;
     object-fit: contain;
 }
@@ -62,8 +68,8 @@ body {
 
 #my-pic {
     border-radius: 50%;
-    width: 20%;
-    height: 20%;
+    max-width: 20%;
+    height: auto;
 }
 
 .projects-section-container {
@@ -111,8 +117,8 @@ body {
 .project.screenshot img {
     padding: 0;
     margin: 0;
-    width: 600px;
-    height: 480px;
+    max-width: 500px;
+    height: auto;
     object-fit: contain;
 }
 
@@ -186,4 +192,100 @@ body {
 
 ::-webkit-input-placeholder { 
     font-size: 0.7em;
+}
+
+@media only screen and (max-width: 1000px) {
+  #about-section-container {
+    width: 100vw;
+  }
+
+  #about-section {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  #my-pic {
+    max-width:60%;
+  }
+
+  .project.description {
+    width: 100%;
+  }
+
+  .project-container {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about-project {
+    margin: 0 5%;
+  }
+
+  .project.screenshot {
+    display: flex;
+    justify-content: center;
+  }
+
+  #fs-frm {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hamburger-icon {
+    display: inline;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav.center, .nav.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+  }
+
+  .nav-item a {
+    padding: 0;
+  }
+
+  .nav.left {
+    padding: 0;
+    width: 90vw;
+    justify-content: space-between;
+  }
+
+  ul {
+    padding-inline-start: 0px;
+  }
+
+  ul.nav.center {
+    margin-bottom: 0;
+  }
+
+  ul.nav.right {
+    margin-top: 0;
+  }
+
+  ul.nav.right .nav-item{
+    padding: 15%;
+  }
+
+  .navbar-logo{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav.center, .nav.right {
+    display: none;
+  }
+
+  .nav.center.responsive, .nav.right.responsive {
+    display: block;
+  }
+
 }
